@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS+DOM</title>
+  </head>
+  <body>
+    <!-- EX1: Add an h1 tag with the name of your shop
+
+EX2: Add a TABLE with the top 5 products of your shop
+
+EX3: Insert for each product an image, a title, a description and a price
+
+EX4: Add links to existing Amazon products for each item in the table
+
+EX5: Add a footer with the address and the name of your shop
+
+EX6: Add a message board where the user can type a message in it (no real posting/saving features required!) -->
+    <h1>Andy's Shop</h1>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Image</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>
+          iPhone Case<span
+            ><br /><a
+              href="https://www.amazon.co.uk/kwmobile-Case-iPhone-Plus-Shockproof/dp/B0B4JY2494/ref=sr_1_1_sspa?crid=37ETMG6DGEMQ8&keywords=iPhone+case&qid=1665406396&qu=eyJxc2MiOiI3LjM2IiwicXNhIjoiNi4yMiIsInFzcCI6IjUuNTMifQ%3D%3D&sprefix=iphone+cas%2Caps%2C167&sr=8-1-spons&psc=1&smid=A2N58YCCQNSUNR"
+              >Buy Now!</a
+            ></span
+          >
+        </td>
+        <td>12.99$</td>
+        <td>
+          <img
+            src="https://m.media-amazon.com/images/I/61Q0vv9B5yL._AC_SL1500_.jpg"
+            alt="iPhone Case"
+          />
+        </td>
+        <td>
+          <p>
+            SOFT TOUCH: Soft and flexible material provides an attractive
+            covering while feeling smooth to the touch. A comfortable grip
+            whenever you text, scroll, or take photos
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Samsung Case<span
+            ><br /><a
+              href="https://www.amazon.co.uk/iCatchy-Samsung-Galaxy-A23-M23-Black/dp/B09Z2ZMPGN/ref=sr_1_1_sspa?crid=NXG06S7GY6VT&keywords=Samsung+case&qid=1665406510&qu=eyJxc2MiOiI3LjA2IiwicXNhIjoiNS45OSIsInFzcCI6IjUuNTcifQ%3D%3D&sprefix=samsung+case%2Caps%2C165&sr=8-1-spons&psc=1"
+              >Buy Now!</a
+            ></span
+          >
+        </td>
+        <td>6.99$</td>
+        <td>
+          <img
+            src="https://m.media-amazon.com/images/I/61fFj7ii07L._AC_SL1500_.jpg"
+            alt="Samsung Case"
+          />
+        </td>
+        <td>
+          <p>
+            Suitable For Samsung Galaxy A23 5G / GALAXY M23 5G. Slim Folio
+            Wallet Type case to minimize bulk and fully protect your smart
+            phone. Easy access to All Buttons.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Huawei Case<span
+            ><br /><a
+              href="https://www.amazon.co.uk/Migeec-Huawei-P30-Case-Technology-Transparent/dp/B07WDR95N7/ref=sr_1_1_sspa?crid=238L99ELJ725S&keywords=Huawei+case&qid=1665406637&qu=eyJxc2MiOiI2LjE5IiwicXNhIjoiNC42MiIsInFzcCI6IjMuNzEifQ%3D%3D&sprefix=huawei+case%2Caps%2C138&sr=8-1-spons&psc=1"
+              >Buy Now!</a
+            ></span
+          >
+        </td>
+        <td>8.99$</td>
+        <td>
+          <img
+            src="https://m.media-amazon.com/images/I/81Xz-nkfBLL._AC_SL1500_.jpg"
+            alt="Huawei Case"
+          />
+        </td>
+        <td>
+          <p>
+            [Designed for] - Huawei P30. Fits snugly over the volume buttons and
+            precise cutout.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Xiaomi Case<span
+            ><br /><a
+              href="https://www.amazon.co.uk/iCatchy-Xiaomi-12-Lite-Kickstand-Black/dp/B0B71BS752/ref=sr_1_2_sspa?crid=1EGGHMS95ADXD&keywords=Xiaomi+case&qid=1665406727&qu=eyJxc2MiOiI1LjEzIiwicXNhIjoiMy43NCIsInFzcCI6IjMuMDQifQ%3D%3D&sprefix=xiaomi+case%2Caps%2C163&sr=8-2-spons&psc=1"
+              >Buy Now!</a
+            ></span
+          >
+        </td>
+        <td>6.99$</td>
+        <td>
+          <img
+            src="https://m.media-amazon.com/images/I/61R9rTeLc3L._AC_SL1500_.jpg"
+            alt="Xiaomi Case"
+          />
+        </td>
+        <td>
+          <p>
+            Suitable For Xiaomi 12 Lite. Slim Folio Wallet Type case to minimize
+            bulk and fully protect your smart phone. Easy access to All Buttons.
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          OnePlus Case<span
+            ><br /><a
+              href="https://www.amazon.co.uk/Pkila-Compatible-Transparent-Protection-Anti-Scratch-10T-5G-CBTPU/dp/B0BB66TGK6/ref=sr_1_1_sspa?crid=GKFHRMFH3MV5&keywords=oneplus+case&qid=1665406774&qu=eyJxc2MiOiI1LjczIiwicXNhIjoiNC43MSIsInFzcCI6IjMuOTkifQ%3D%3D&sprefix=oneplus+case%2Caps%2C133&sr=8-1-spons&psc=1&smid=A1S6WPVQTXXY6D"
+              >Buy Now!</a
+            ></span
+          >
+        </td>
+        <td>8.99$</td>
+        <td>
+          <img
+            src="https://m.media-amazon.com/images/I/71ydA0DF4VL._AC_SL1500_.jpg"
+            alt="OnePlus Case"
+          />
+        </td>
+        <td>
+          <p>
+            Precise Cutouts: Tailored for the case compatible with OnePlus 10T
+            5G. Perfect cutouts for speakers, camera and other ports and
+            buttons, easy access to all controls and functions.
+          </p>
+        </td>
+      </tr>
+    </table>
+    <textarea></textarea>
+    <footer>
+      <h2>Andy's Shop</h2>
+      <p>This is my address, Itzehoe, Germany</p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
