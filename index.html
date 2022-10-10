@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>JS+DOM</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <!-- EX1: Add an h1 tag with the name of your shop
@@ -23,7 +29,7 @@ EX6: Add a message board where the user can type a message in it (no real postin
       <tr>
         <th>Title</th>
         <th>Price</th>
-        <th>Image</th>
+        <th><button onclick="hideContainer()">Image</button></th>
         <th>Description</th>
       </tr>
       <tr>
@@ -35,9 +41,10 @@ EX6: Add a message board where the user can type a message in it (no real postin
             ></span
           >
         </td>
-        <td>12.99$</td>
+        <td class="price">12.99$</td>
         <td>
           <img
+            class="images"
             src="https://m.media-amazon.com/images/I/61Q0vv9B5yL._AC_SL1500_.jpg"
             alt="iPhone Case"
           />
@@ -59,9 +66,11 @@ EX6: Add a message board where the user can type a message in it (no real postin
             ></span
           >
         </td>
-        <td>6.99$</td>
+        <td class="price">6.99$</td>
         <td>
           <img
+            class="images"
+            id="container"
             src="https://m.media-amazon.com/images/I/61fFj7ii07L._AC_SL1500_.jpg"
             alt="Samsung Case"
           />
@@ -83,9 +92,10 @@ EX6: Add a message board where the user can type a message in it (no real postin
             ></span
           >
         </td>
-        <td>8.99$</td>
+        <td class="price">8.99$</td>
         <td>
           <img
+            class="images"
             src="https://m.media-amazon.com/images/I/81Xz-nkfBLL._AC_SL1500_.jpg"
             alt="Huawei Case"
           />
@@ -106,9 +116,10 @@ EX6: Add a message board where the user can type a message in it (no real postin
             ></span
           >
         </td>
-        <td>6.99$</td>
+        <td class="price">6.99$</td>
         <td>
           <img
+            class="images"
             src="https://m.media-amazon.com/images/I/61R9rTeLc3L._AC_SL1500_.jpg"
             alt="Xiaomi Case"
           />
@@ -129,9 +140,10 @@ EX6: Add a message board where the user can type a message in it (no real postin
             ></span
           >
         </td>
-        <td>8.99$</td>
+        <td class="price">8.99$</td>
         <td>
           <img
+            class="images"
             src="https://m.media-amazon.com/images/I/71ydA0DF4VL._AC_SL1500_.jpg"
             alt="OnePlus Case"
           />

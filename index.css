@@ -1,0 +1,8 @@
+.hidden {
+  display: none;
+}
+
+.images {
+  width: 200px;
+  aspect-ratio: 1/1;
+}
